@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="container">
+        <div id="title">Simple Quiz</div>
+
+        
+        <div id="bodysbody">
+            <div>
+            <button onclick="starting()" id="start_button">START THE QUIZZ</button>
+            </div>
+            <div id="quizz_container" style="display: none;">
+                <div id="question">Question</div>
+
+                <div id="answers">
+                    <ul>
+                        <li id="answer_1" class="choice">answer 1</li>
+                        <li id="answer_2" class="choice">answer 2</li>
+                        <li id="answer_3" class="choice">answer 3</li>
+                        <li id="answer_4" class="choice">answer 4</li>
+                    </ul>
+                </div>
+                <div id="button">
+                    <button onclick="next()">next</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
